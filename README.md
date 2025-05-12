@@ -1,8 +1,9 @@
 # ⚠️ Pas encore fini ⚠️
 
-Je developpe ces exercices pour les curieux. L'objectif à terme pourrait être un "rustlings" { Epitech } 😎
-Les exercices sont surement un peu dur pour des débutants. Je me suis focalisé notamment sur les points
-"bloquants" du rust. Il y en a encore beaucoup...
+Voici la version corrigée :
+"Je développe ces exercices pour les curieux. L'objectif à terme pourrait être un 'rustlings' à la { Epitech } 😎
+Les exercices sont sûrement un peu durs pour des débutants. Je me suis focalisé notamment sur les points
+'bloquants' du Rust. Il y en a encore beaucoup...
 
 # Exercices de programmation Rust
 
