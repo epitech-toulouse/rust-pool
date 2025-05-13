@@ -1,5 +1,10 @@
 use std::fmt::Display;
 
+//
+// Exercice difficile
+// Implementer une liste chainée
+//
+
 pub enum List<T> {
     Cons(T, Box<List<T>>),
     Nil,
@@ -23,4 +28,8 @@ pub fn display_cons_list<T: Display>(list: &List<T>) -> String {
 pub fn sum_list(list: &List<i32>) -> i32 {
     // TODO() : Implémenter la fonction sum_list qui additionne tous les
     // éléments d'une liste d'entiers
+}
+
+fn main() {
+    // pour tester vos fonctions
 }

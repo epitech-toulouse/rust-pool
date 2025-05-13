@@ -11,3 +11,7 @@ pub fn increment_counter(counter: Arc<Mutex<i32>>, increments: i32) -> thread::J
     // de la valeur spécifiée. Verrouiller le Mutex, modifier la valeur et
     // retourner le handle du thread
 }
+
+fn main() {
+    // pour tester vos fonctions
+}

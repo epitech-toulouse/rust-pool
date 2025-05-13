@@ -25,7 +25,15 @@ src/
 Pour travailler sur les exercices, utilisez la commande suivante :
 
 ```bash
-cargo run --bin exercises
+rustc filename
+./filename
+```
+
+Pour tester
+
+```bash
+rustc filename --test
+./filename
 ```
 
 Cette commande compilera et exécutera les exercices sans les solutions.
@@ -37,5 +45,7 @@ Pour exécuter les solutions de référence, utilisez :
 ```bash
 cargo run --bin solutions --features="solutions"
 ```
+
+Le main() de solution est un sac de noeuds, je le fixerai asap
 
 Cette commande active la fonctionnalité "solutions" et utilise le fichier main.rs situé dans le répertoire des solutions.

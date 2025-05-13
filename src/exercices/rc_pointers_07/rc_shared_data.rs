@@ -11,6 +11,10 @@ pub fn add_consumer(resource: &Rc<Vec<i32>>) -> usize {
     // Retourner le nombre actuel de références fortes
 }
 
+fn main() {
+    // pour tester vos fonctions
+}
+
 #[test]
 fn test_shared_resource() {
     let original_vec = create_shared_resource();

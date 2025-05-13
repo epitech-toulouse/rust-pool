@@ -7,3 +7,7 @@ where
     // Chaque opération doit être appelée avec le vecteur de données comme argument,
     // permettant à ces opérations de modifier le vecteur.
 }
+
+fn main() {
+    // pour tester vos fonctions
+}

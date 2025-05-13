@@ -1,5 +1,7 @@
 use std::u8;
 
+// Exercice difficile
+
 pub struct User {
     username: String,
     email: Option<String>,
@@ -35,4 +37,8 @@ impl User {
         // - None si l'âge n'est pas renseigné
         // Utiliser la méthode map sur Option pour une solution élégante
     }
+}
+
+fn main() {
+    // pour tester
 }

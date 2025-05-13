@@ -1,5 +1,7 @@
 use std::cell::RefCell;
 
+// Exercice difficile
+
 // Prototype de la structure
 pub struct Logger {
     log: RefCell<Vec<String>>,
@@ -32,4 +34,8 @@ impl Logger {
         // 2. Appelle la fonction processor fournie avec les données et la closure
         // 3. Retourne le résultat du traitement
     }
+}
+
+fn main() {
+    // pour tester vos fonctions
 }
