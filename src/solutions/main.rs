@@ -9,9 +9,9 @@ pub mod refcell_pointer;
 
 mod resume_solution;
 use ansi_term::{Colour, Style};
-use resume_solution::{exo1, exo2, exo3, exo4, exo5, exo6, exo7, exo8, exo9, exo10, exo11};
+use resume_solution::{exo1, exo10, exo11, exo2, exo3, exo4, exo5, exo6, exo7, exo8, exo9};
 
-// Main de test
+// main pour les exercices ⚠️ va changer ⚠️
 fn main() {
     println!(
         "\n{}",

@@ -186,7 +186,6 @@ pub fn exo8() {
 }
 
 // Exercice 9
-// Simplement pour revoir les methodes d'iterations ect...
 pub fn exo9() {
     let sentence_vec = vec![
         "Bonjour je m'appelle Loïc",
