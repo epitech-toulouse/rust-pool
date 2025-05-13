@@ -1,5 +1,5 @@
 // En c pour coder cette fonction vous auriez tendance à coder comme ça.
-// Le rust est un langage qui accorde des manières plus simples
+// Le rust est un langage qui accorde des manières de faire plus simples
 // comme dans les lanages fonctionnels.
 pub fn sum_even_numbers_like_c(start: i32, end: i32) -> i32 {
     let mut res = 0;
