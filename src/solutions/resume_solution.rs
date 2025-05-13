@@ -1,3 +1,7 @@
+// ⚠️
+// FICHIER QUI N'EST PAS DESTINÉ À RESTER EN L'ETAT, IL ME PERMET JUSTE DE TESTER
+// MES FONCTIONS DE MON COTÉ.
+
 use crate::box_pointers::binary_tree::Node;
 use crate::box_pointers::cons_list::{create_list, display_cons_list, sum_list};
 use crate::error_handling::user_option::User;
@@ -12,6 +16,8 @@ use crate::mutex_pointers::mutex::{create_counter, increment_counter};
 use crate::rc_pointers::rc_shared_data::{add_consumer, create_shared_resource};
 use crate::rc_pointers::rc_smart_pointer::create_shared_data;
 use crate::refcell_pointer::refcell::Logger;
+use crate::traits::trait1::{Display, Person, Product};
+use crate::traits::trait2::{analyze_shape, Circle, Rectangle};
 
 use ansi_term::Colour;
 use std::rc::Rc;
@@ -266,4 +272,31 @@ pub fn exo11() {
 
     println!("{:?}", count_chars(str));
     println!("{:?}", word_frequency(str));
+}
+
+// Exercices sur les traits
+pub fn exo12() {
+    let personne = Person {
+        name: String::from("Alice"),
+        age: 30,
+    };
+
+    let produit = Product {
+        name: String::from("Ordinateur"),
+        price: 999.99,
+    };
+
+    personne.display();
+    produit.display();
+}
+
+pub fn exo13() {
+    let circle = Circle { radius: 5.0 };
+    let rectangle = Rectangle {
+        width: 10.0,
+        height: 5.0,
+    };
+
+    analyze_shape(&circle);
+    analyze_shape(&rectangle);
 }

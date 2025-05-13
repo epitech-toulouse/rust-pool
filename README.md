@@ -1,6 +1,6 @@
 # ⚠️ Pas encore fini ⚠️
 
-"Je développe ces exercices pour les curieux.
+Je développe ces exercices pour les curieux.
 
 L'objectif à terme pourrait être un 'rustlings' à la { Epitech } 😎
 Les exercices sont sûrement un peu durs pour des débutants. Je me suis focalisé notamment sur les points
