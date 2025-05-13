@@ -11,3 +11,26 @@ where
 fn main() {
     // pour tester vos fonctions
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_apply_operations_empty_data() {
+        let mut data: Vec<i32> = vec![];
+        let operations = vec![|v: &mut Vec<i32>| v.push(1), |v: &mut Vec<i32>| v.push(2)];
+
+        apply_operations(&mut data, operations);
+        assert_eq!(data, vec![1, 2]);
+    }
+
+    #[test]
+    fn test_apply_operations_empty_ops() {
+        let mut data = vec![1, 2, 3];
+        let operations: Vec<fn(&mut Vec<i32>)> = vec![];
+
+        apply_operations(&mut data, operations);
+        assert_eq!(data, vec![1, 2, 3]);
+    }
+}

@@ -20,7 +20,7 @@ fn test_shared_resource() {
     let original_vec = create_shared_resource();
     assert_eq!(Rc::strong_count(&original_vec), 1);
     let count1 = add_consumer(&original_vec);
-    assert_eq!(count1, 2); // ATTENTION: Le test actuel a une erreur, il devrait être 2 et non 3
+    assert_eq!(count1, 2); // ⚠️ ATTENTION: Le test actuel a une erreur, il devrait être 2 et non 3
     let count2 = add_consumer(&original_vec);
     assert_eq!(count2, 3);
 }

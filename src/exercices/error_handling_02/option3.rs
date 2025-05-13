@@ -7,3 +7,29 @@ fn process_words(words: Vec<&str>) -> Vec<String> {
 fn main() {
     // pour tester
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_process_words_basic() {
+        let words = vec!["the", "quick", "brown", "fox", "jumped"];
+        let result = process_words(words);
+        assert_eq!(result, vec!["QUICK", "BROWN", "JUMPED"]);
+    }
+
+    #[test]
+    fn test_process_words_empty() {
+        let words: Vec<&str> = vec![];
+        let result = process_words(words);
+        assert_eq!(result, Vec::<String>::new());
+    }
+
+    #[test]
+    fn test_process_words_no_matching() {
+        let words = vec!["a", "an", "the", "in"];
+        let result = process_words(words);
+        assert_eq!(result, Vec::<String>::new());
+    }
+}
