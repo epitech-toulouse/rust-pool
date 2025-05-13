@@ -1,6 +1,8 @@
 # ⚠️ Pas encore fini ⚠️
 
-"Je développe ces exercices pour les curieux. L'objectif à terme pourrait être un 'rustlings' à la { Epitech } 😎
+"Je développe ces exercices pour les curieux.
+
+L'objectif à terme pourrait être un 'rustlings' à la { Epitech } 😎
 Les exercices sont sûrement un peu durs pour des débutants. Je me suis focalisé notamment sur les points
 'bloquants' du Rust. Il y en a encore beaucoup...
 
@@ -17,6 +19,8 @@ src/
 ├── main.rs              # Point d'entrée pour les exercices
 └── resume_exercices.rs  # Fonctions d'exercices
 ```
+
+Il y a des fonctions de test dans chaque fichier. Ces tests ont pour but de vous aiguiller, utilisez les !!
 
 ## Comment compiler et exécuter
 
@@ -35,8 +39,6 @@ Pour tester
 rustc filename --test
 ./filename
 ```
-
-Cette commande compilera et exécutera les exercices sans les solutions.
 
 ### Pour les solutions
 
