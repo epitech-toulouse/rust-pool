@@ -4,7 +4,7 @@ En Rust, les structures de contrôle conditionnel permettent d'exécuter différ
 Les expressions de condition ne nécessitent pas de parenthèses, mais les accolades sont obligatoires pour délimiter les blocs de code. Les conditions doivent être des expressions booléennes (type bool).
 
 ```rust
-rustif condition {
+if condition {
     // Code exécuté si la condition est vraie
 } else if autre_condition {
     // Code exécuté si la première condition est fausse

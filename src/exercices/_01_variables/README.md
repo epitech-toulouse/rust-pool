@@ -4,7 +4,7 @@ En Rust, les variables sont des emplacements mémoire nommés qui stockent des v
 Rust est un langage à typage statique fort, mais offre l'inférence de types, permettant souvent d'omettre les annotations de type. Le langage supporte également le "shadowing", permettant de redéclarer une variable avec le même nom.
 
 ```rust
-rustlet x = 5;    // Variable immuable
+let x = 5;    // Variable immuable
 let mut y = 10;   // Variable mutable
 let x = x + 1;    // Shadowing (x vaut maintenant 6)
 ```
