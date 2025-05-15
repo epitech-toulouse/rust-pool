@@ -32,3 +32,4 @@ mod tests {
         // A function should also work with an empty string
         assert_eq!(greet_test(""), "Hello, !");
     }
+}
