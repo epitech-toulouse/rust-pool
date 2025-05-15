@@ -10,10 +10,6 @@ pub fn get_action(light: TrafficLight) -> String {
     // - Si le feu est rouge: retourner "Arrêter"
     // - Si le feu est jaune: retourner "Ralentir"
     // - Si le feu est vert: retourner "Avancer"
-    //
-    // Utilisez le pattern matching (match) sur l'enum TrafficLight.
-
-    String::new() // Placeholder return value
 }
 
 fn main() {
