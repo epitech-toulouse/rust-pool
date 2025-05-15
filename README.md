@@ -1,3 +1,7 @@
+# Reste à faire
+
+Solutions : Compléter les solutions et l'architechture
+
 # Exercices de programmation Rust
 
 Ce dépôt contient une série d'exercices pour apprendre et pratiquer différents concepts en Rust. Les exercices couvrent des sujets allant des boucles et des collections aux smart pointers et à la gestion d'erreurs.
@@ -44,4 +48,4 @@ Le main() de solution est un sac de noeuds, je le fixerai asap
 
 Cette commande active la fonctionnalité "solutions" et utilise le fichier main.rs situé dans le répertoire des solutions.
 
-Made by Loïc Rouzaud
+**Made by Loïc Rouzaud**
