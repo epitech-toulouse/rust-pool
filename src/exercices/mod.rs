@@ -13,7 +13,6 @@ pub mod _12_ownership;
 pub mod _13_life_cycle;
 pub mod _14_error_handling;
 pub mod _15_generics_types;
-pub mod _16_closures;
 pub mod _16_fn_pointers;
 pub mod _17_box_pointers;
 pub mod _18_mutex_pointers;
