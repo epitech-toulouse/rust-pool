@@ -1,23 +1,3 @@
-# ⚠️ Pas encore fini ⚠️
-
-Je développe ces exercices pour les curieux.
-
-L'objectif à terme pourrait être un 'rustlings' à la { Epitech } 😎
-Les exercices sont sûrement un peu durs pour des débutants. Je me suis focalisé notamment sur les points
-'bloquants' du Rust. Il y en a encore beaucoup...
-
-# Futurs exercices à prévoir
-
-- variables
-- pattern matching
-- enums / structures
-- if let / while let
-- generics types
-- ownership
-- lifetime
-- closures
-- multi-threading
-
 # Exercices de programmation Rust
 
 Ce dépôt contient une série d'exercices pour apprendre et pratiquer différents concepts en Rust. Les exercices couvrent des sujets allant des boucles et des collections aux smart pointers et à la gestion d'erreurs.
