@@ -8,5 +8,3 @@ fn main() {
     //    - "Passable" si note >= 10 et < 12
     //    - "Fail" si note < 10
 }
-
-// pas de tests pour celui ci. Trop facile nan ?

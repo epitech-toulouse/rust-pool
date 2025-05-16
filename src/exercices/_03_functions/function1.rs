@@ -19,17 +19,17 @@ mod tests {
 
     #[test]
     fn test_greet_name() {
-        assert_eq!(greet_test("Alice"), "Hello, Alice!");
+        assert_eq!(greet("Alice"), "Hello, Alice!");
     }
 
     #[test]
     fn test_greet_world() {
-        assert_eq!(greet_test("world"), "Hello, world!");
+        assert_eq!(greet("world"), "Hello, world!");
     }
 
     #[test]
     fn test_greet_empty() {
         // A function should also work with an empty string
-        assert_eq!(greet_test(""), "Hello, !");
+        assert_eq!(greet(""), "Hello, !");
     }
 }

@@ -4,5 +4,3 @@ fn main() {
     // 2. Écris une condition if/else qui affiche "major" si age >= 18, sinon "major"
     // 3. Change la valeur de 'age' à 20 et vérifie que le message changes
 }
-
-// pas de tests pour celui ci. Trop facile nan ?

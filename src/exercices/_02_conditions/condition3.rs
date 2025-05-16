@@ -7,5 +7,3 @@ fn main() {
     //    - "good for a walk" si la température est entre 15 et 25 ET qu'il ne fait pas soleil
     //    - "stay at home" dans tous les autres cas
 }
-
-// pas de tests pour celui ci. Trop facile nan ?
