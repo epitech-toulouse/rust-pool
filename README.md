@@ -35,17 +35,3 @@ Pour tester
 rustc filename --test
 ./filename
 ```
-
-### Pour les solutions
-
-Pour exécuter les solutions de référence, utilisez :
-
-```bash
-cargo run --bin solutions --features="solutions"
-```
-
-Le main() de solution est un sac de noeuds, je le fixerai asap
-
-Cette commande active la fonctionnalité "solutions" et utilise le fichier main.rs situé dans le répertoire des solutions.
-
-**Made by Loïc Rouzaud**
