@@ -5,10 +5,12 @@ edition = "2021"
 
 [features]
 solutions = []
+exercises = []
 
 [[bin]]
 name = "exercises"
-path = "src/main.rs"
+path = "src/exercises/main.rs"
+required-features = ["exercises"]
 
 [[bin]]
 name = "solutions"

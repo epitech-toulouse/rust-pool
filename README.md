@@ -31,8 +31,14 @@ rustc filename --test
 ./filename
 ```
 
-# Solutions
+## Solutions
 
 ```rust
 cargo run --bin solutions --features solutions
+```
+
+## Exercices
+
+```rust
+cargo run --bin exercices --features exercises
 ```
