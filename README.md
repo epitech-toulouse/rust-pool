@@ -7,7 +7,7 @@ Ce dépôt contient une série d'exercices pour apprendre et pratiquer différen
 ```
 src/
 ├── exercices/           # Code des exercices (à compléter par les élèves)
-└── solutions/main.rs           # Implémentations de référence
+└── solutions/main.rs    # Implémentations de référence
 ```
 
 ### Solutions
