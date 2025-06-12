@@ -7,12 +7,12 @@ pub fn create_rectangle(width: f64, height: f64) -> Rectangle {
     unimplemented!() // À remplacer
 }
 
-// Cette fonction calcule et retourne l'aire du rectangle (width * height)
+// Cette fonction calcule et retourne l'aire du rectangle
 fn calculate_area(rectangle: &Rectangle) -> f64 {
     // Votre code ici
 }
 
-// Cette fonction calcule et retourne le périmètre du rectangle (2 * (width + height))
+// Cette fonction calcule et retourne le périmètre du rectangle
 fn calculate_perimeter(rectangle: &Rectangle) -> f64 {
     // Votre code ici
 }

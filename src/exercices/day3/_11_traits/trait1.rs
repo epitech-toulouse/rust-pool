@@ -18,14 +18,14 @@ impl Display for Person {
     // TODO: Implémentez la méthode display pour la structure Person
     // Elle doit retourner une chaîne au format: "Personne: [nom] ([age] ans)"
     // Exemple: "Personne: Alice (30 ans)"
-    todo!()
+    todo!();
 }
 
 impl Display for Product {
     // TODO: Implémentez la méthode display pour la structure Product
     // Elle doit retourner une chaîne au format: "Produit: [nom] ([prix]€)"
     // Exemple: "Produit: Ordinateur (999.99€)"
-    todo!()
+    todo!();
 }
 
 fn main() {
