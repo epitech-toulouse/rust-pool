@@ -4,7 +4,7 @@ todo()!;
 fn main() {
     // TODO: Exercice 1 - Création et appel d'une fonction simple
     // 1. Crée une fonction nommée 'greet' qui prend un paramètre 'name' de type &str
-    // 2. Cette fonction doit afficher "Hello, {name}!"
+    // 2. Cette fonction doit retourner "Hello, {name}!"
     // 3. Appelle cette fonction avec ton prénom
     // 4. Appelle cette fonction avec "world"
 }

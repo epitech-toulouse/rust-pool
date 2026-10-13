@@ -61,4 +61,13 @@ mod tests {
         assert_eq!(filter_even_numbers(&vec![]), Vec::<i32>::new());
         assert_eq!(filter_even_numbers(&vec![1, 3, 5]), Vec::<i32>::new());
     }
+
+    #[test]
+    fn merge_vectors_alternates_and_keeps_remaining_elements() {
+        assert_eq!(
+            merge_vectors(&vec![1, 3, 5], &vec![2, 4, 6, 8]),
+            vec![1, 2, 3, 4, 5, 6, 8]
+        );
+        assert_eq!(merge_vectors(&vec![], &vec![2, 4]), vec![2, 4]);
+    }
 }

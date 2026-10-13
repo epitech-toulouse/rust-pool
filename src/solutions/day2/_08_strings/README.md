@@ -12,6 +12,6 @@ En Rust, il existe deux types principaux pour représenter des chaînes de carac
 **String** a un coût en mémoire plus élevé que &str
 **&str** est souvent utilisé pour les paramètres de fonction afin d'accepter à la fois String et &str
 
-On peut convertir facilement entre les deux types avec & et to_string() ou String::from().
+Un `String` peut être emprunté comme `&str` avec `as_str()` (ou par déréférencement implicite) ; on crée un `String` avec `to_string()` ou `String::from()`.
 
 - https://blog.guillaume-gomez.fr/Rust/2/8

@@ -1,6 +1,6 @@
 pub fn sum_even_numbers_like_c(start: i32, end: i32) -> i32 {
     let mut res = 0;
-    for i in start..end {
+    for i in start..=end {
         if i % 2 == 0 {
             res += i;
         }
@@ -9,7 +9,7 @@ pub fn sum_even_numbers_like_c(start: i32, end: i32) -> i32 {
 }
 
 pub fn sum_even_numbers(start: i32, end: i32) -> i32 {
-    (start..end).filter(|&x| x % 2 == 0).sum()
+    (start..=end).filter(|&x| x % 2 == 0).sum()
 }
 
 fn sum_even_numbers_cpy(numbers: &[i32]) -> i32 {
@@ -26,6 +26,11 @@ mod tests {
     #[test]
     fn test_sum_even_numbers_1() {
         assert_eq!(sum_even_numbers(1, 10), 30);
+    }
+
+    #[test]
+    fn test_sum_even_numbers_like_c_uses_the_same_inclusive_range() {
+        assert_eq!(sum_even_numbers_like_c(1, 10), 30);
     }
 
     #[test]

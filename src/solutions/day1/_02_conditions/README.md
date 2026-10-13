@@ -17,7 +17,7 @@ if condition {
 En Rust, les expressions conditionnelles peuvent également retourner une valeur, ce qui permet une syntaxe concise pour l'affectation conditionnelle.
 
 ```rust
-rustlet valeur = if condition { 5 } else { 10 };
+let valeur = if condition { 5 } else { 10 };
 ```
 
 - https://blog.guillaume-gomez.fr/Rust/1/5

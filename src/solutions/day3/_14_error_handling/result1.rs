@@ -10,13 +10,13 @@ fn parse_age(input: &str) -> Result<u8, ParseError> {
         return Err(ParseError::EmptyInput);
     }
 
-    let parsed: u8 = match input.trim().parse() {
+    let parsed: u32 = match input.trim().parse() {
         Ok(num) => num,
         Err(_) => return Err(ParseError::InvalidNumber),
     };
 
     if parsed <= 120 {
-        Ok(parsed)
+        Ok(parsed as u8)
     } else {
         Err(ParseError::OutOfRange)
     }
@@ -43,8 +43,20 @@ mod tests {
     }
 
     #[test]
+    fn test_parse_age_invalid_number() {
+        let result = parse_age("twenty-five");
+        assert!(matches!(result, Err(ParseError::InvalidNumber)));
+    }
+
+    #[test]
     fn test_parse_age_out_of_range() {
         let result = parse_age("150");
+        assert!(matches!(result, Err(ParseError::OutOfRange)));
+    }
+
+    #[test]
+    fn test_parse_age_out_of_range_beyond_u8() {
+        let result = parse_age("256");
         assert!(matches!(result, Err(ParseError::OutOfRange)));
     }
 }

@@ -51,3 +51,40 @@ impl EventManager {
         all_success
     }
 }
+
+fn main() {
+    let mut manager = EventManager::new();
+    manager.register_start_handler(|| println!("Gestionnaire de demarrage execute."));
+    manager.register_message_handler(|message| format!("Echo : {}", message));
+    manager.register_message_handler(|message| message.to_uppercase());
+    manager.register_shutdown_handler(|| true);
+
+    manager.trigger_start();
+    for response in manager.process_message(String::from("bonjour")) {
+        println!("{}", response);
+    }
+    println!("Arret reussi : {}", manager.shutdown());
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn handlers_are_called_and_shutdown_combines_their_results() {
+        let mut manager = EventManager::new();
+        manager.register_start_handler(|| {});
+        manager.trigger_start();
+
+        manager.register_message_handler(|message| format!("{}!", message));
+        manager.register_message_handler(|message| message.to_uppercase());
+        assert_eq!(
+            manager.process_message(String::from("hello")),
+            vec![String::from("hello!"), String::from("HELLO")]
+        );
+
+        manager.register_shutdown_handler(|| true);
+        manager.register_shutdown_handler(|| false);
+        assert!(!manager.shutdown());
+    }
+}

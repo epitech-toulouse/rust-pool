@@ -17,7 +17,7 @@ L'ownership est la base du système de types de Rust et permet d'éviter les pro
 
 Libération double (double free)
 Utilisation après libération (use after free)
-Fuites mémoire (memory leaks)
+La plupart des fuites mémoire involontaires (des cycles de `Rc` restent possibles)
 
 Ce mécanisme est complété par le borrowing (emprunt) qui permet d'accéder temporairement aux valeurs sans en prendre la propriété.
 

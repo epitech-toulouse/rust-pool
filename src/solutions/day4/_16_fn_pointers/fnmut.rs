@@ -6,3 +6,14 @@ where
         operation(data);
     }
 }
+
+fn main() {
+    let mut data = vec![1, 2, 3];
+    let operations: Vec<fn(&mut Vec<i32>)> = vec![
+        |values| values.push(4),
+        |values| values.iter_mut().for_each(|value| *value *= 2),
+    ];
+
+    apply_operations(&mut data, operations);
+    println!("Donnees apres operations : {:?}", data);
+}

@@ -12,7 +12,7 @@ fn cons<T>(x: T, list: List<T>) -> List<T> {
 fn create_list<T>(elements: Vec<T>) -> List<T> {
     let mut list = List::Nil;
 
-    for element in elements.into_iter().rev() {
+    for element in elements {
         list = cons(element, list);
     }
     list
@@ -20,9 +20,9 @@ fn create_list<T>(elements: Vec<T>) -> List<T> {
 
 fn display_cons_list<T: Display>(list: &List<T>) -> String {
     match list {
-        List::Nil => format!("Nil"),
+        List::Nil => "Nil".to_string(),
         List::Cons(value, next_list) => {
-            format!("Cons({}, {})", value, display_cons_list(next_list))
+            format!("{} -> {}", value, display_cons_list(next_list))
         }
     }
 }

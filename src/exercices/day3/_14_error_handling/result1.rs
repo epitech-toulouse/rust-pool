@@ -35,8 +35,20 @@ mod tests {
     }
 
     #[test]
+    fn test_parse_age_invalid_number() {
+        let result = parse_age("twenty-five");
+        assert!(matches!(result, Err(ParseError::InvalidNumber)));
+    }
+
+    #[test]
     fn test_parse_age_out_of_range() {
         let result = parse_age("150");
+        assert!(matches!(result, Err(ParseError::OutOfRange)));
+    }
+
+    #[test]
+    fn test_parse_age_out_of_range_beyond_u8() {
+        let result = parse_age("256");
         assert!(matches!(result, Err(ParseError::OutOfRange)));
     }
 }

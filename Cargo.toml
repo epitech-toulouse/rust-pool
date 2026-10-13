@@ -3,22 +3,13 @@ name = "exo-rust"
 version = "0.1.0"
 edition = "2021"
 
-[features]
-solutions = []
-exercises = []
-
 [[bin]]
-name = "exercises"
-path = "src/exercises/main.rs"
-required-features = ["exercises"]
+name = "exercices"
+path = "src/exercices/main.rs"
 
 [[bin]]
 name = "solutions"
 path = "src/solutions/main.rs"
-required-features = ["solutions"]
-
-[dependencies]
-ansi_term = "0.12.1"
 
 [lints.clippy]
 non_snake_case = "allow"
